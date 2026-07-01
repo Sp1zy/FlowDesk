@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Ticker from './components/Ticker';
 import Features from './components/Features';
 import Testimonials from './components/Testimonials';
+import Pricing from './components/Pricing';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Ticker />
         <Features />
         <Testimonials />
+        <Pricing />
       </main>
     </div>
   );
