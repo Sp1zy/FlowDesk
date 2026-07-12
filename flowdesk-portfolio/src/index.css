@@ -34,3 +34,40 @@ h1, h2, h3, h4, h5, h6 {
 .animate-float {
     animation: floatAnimation 5s ease-in-out infinite;
 }
+
+/* ==========================================================================
+   FLOWDESK PLATFORM COMPACTOR ENGINE
+   ========================================================================== */
+
+/* Target the main section container wrappers */
+section, 
+.py-20, 
+.py-24, 
+.py-32,
+[class*="space-y-"] {
+    padding-top: 2.5rem !important;    /* Forces wide gaps (like 5rem-8rem) down to a tight, clean look */
+    padding-bottom: 2.5rem !important; /* Pulls the next section tightly up */
+}
+
+/* Tighten grid alignments and internal header margins */
+.gap-y-16, 
+.gap-y-20, 
+.gap-y-24 {
+    row-gap: 2rem !important; 
+}
+
+.mb-16, 
+.mb-20, 
+.mb-24 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Smooth out the compact spacing specifically on mobile viewports */
+@media screen and (max-width: 768px) {
+    section, 
+    .py-20, 
+    .py-16 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+}
